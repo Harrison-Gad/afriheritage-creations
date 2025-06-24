@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - AfriHeritage Creations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#4A403A',
+                secondary: '#F3EADF',
+                accent: '#D4AF37',
+                'light-bg': '#E9D8C7',
+              },
+              fontFamily: {
+                serif: ['"Playfair Display"', 'serif'],
+                sans: ['"Roboto Serif"', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-[#F3EADF] text-[#4A403A]">
+
+    <header class="bg-white text-[#4A403A] sticky top-0 w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="AfriHeritage Creations Logo" class="h-20 w-auto shadow-lg mr-2 transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer">
+            </a>
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] text-accent font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="flex flex-col items-center space-y-6 py-4">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] text-accent font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-[#E9D8C7]">
+            <div class="container mx-auto px-6">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-4">About AfriHeritage Creations</h2>
+                    <p class="text-lg text-gray-700 max-w-3xl mx-auto">AfriHeritage Creations was born from a passion for the vibrant and diverse cultures of Africa. Our founder, a descendant of artisans, envisioned a platform that would not only showcase the beauty of African craftsmanship but also tell the stories behind each piece. Our mission is to bridge the gap between talented African artisans and a global audience that appreciates authenticity and cultural heritage.</p>
+                </div>
+
+                <div class="mt-20">
+                    <h3 class="text-2xl font-bold text-center mb-12">Meet the Makers</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Maker 1 -->
+                        <div class="text-center">
+                            <img src="assets/makers/Akinyi from Kenya.jpg" alt="Artisan from Kenya" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-lg">Akinyi from Kenya</h4>
+                            <p class="text-gray-600 italic">"Beadwork is my meditation. Each bead tells a story of my ancestors."</p>
+                        </div>
+                        <!-- Maker 2 -->
+                        <div class="text-center">
+                            <img src="assets/makers/Kwame from Ghana.jpg" alt="Artisan from Ghana" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-lg">Kwame from Ghana</h4>
+                            <p class="text-gray-600 italic">"The drum is the heartbeat of my community. I carve its rhythm into wood."</p>
+                        </div>
+                        <!-- Maker 3 -->
+                        <div class="text-center">
+                            <img src="assets/makers/Fatima from Nigeria.jpg" alt="Artisan from Nigeria" class="w-32 h-32 rounded-full mx-auto mb-4 object-cover">
+                            <h4 class="font-bold text-lg">Fatima from Nigeria</h4>
+                            <p class="text-gray-600 italic">"The patterns in my fabrics are prayers for prosperity and joy."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Support for Artisans & Their Families -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-2xl font-bold mb-4">Empowering Artisans & Their Families</h3>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">AfriHeritage Creations is committed to supporting the livelihoods of African artisans and their families. Through fair trade practices, direct funding, and community-driven projects, we ensure that every purchase makes a real difference. Your support helps provide education, healthcare, and a brighter future for artisan families across the continent.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-8 mt-8">
+                    <div class="flex-1 bg-[#E9D8C7] rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/icons/sustainable-funding.svg" alt="Sustainable Funding" class="w-16 h-16 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Sustainable Funding</h4>
+                        <p class="text-gray-600 group-hover:text-primary">A portion of every sale goes directly to artisan communities, supporting their daily needs and long-term growth.</p>
+                    </div>
+                    <div class="flex-1 bg-[#E9D8C7] rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/icons/family-wellbeing.svg" alt="Family Wellbeing" class="w-16 h-16 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Family Wellbeing</h4>
+                        <p class="text-gray-600 group-hover:text-primary">We invest in education, healthcare, and safe living conditions for artisans and their families.</p>
+                    </div>
+                    <div class="flex-1 bg-[#E9D8C7] rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/icons/community-impact.svg" alt="Community Impact" class="w-16 h-16 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Community Impact</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Our projects foster community development, cultural preservation, and economic empowerment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourism in Top African Countries -->
+        <section class="py-16 bg-[#F3EADF]">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-2xl font-bold mb-4">Explore Africa: Art, Culture & Tourism</h3>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-8">Africa is a vibrant destination for travelers seeking art, history, and adventure. Discover the most visited countries and their unique cultural treasures.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/flags/egypt.svg" alt="Egypt Flag" class="w-16 h-12 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Egypt</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Marvel at the pyramids, ancient temples, and bustling markets filled with traditional crafts.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/flags/south-africa.svg" alt="South Africa Flag" class="w-16 h-12 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">South Africa</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Experience Cape Town's art scene, vibrant townships, and the beauty of local beadwork and sculpture.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/flags/morocco.svg" alt="Morocco Flag" class="w-16 h-12 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Morocco</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Wander through colorful souks, admire intricate tilework, and discover centuries-old artisan traditions.</p>
+                    </div>
+                    <div class="bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/flags/ghana.svg" alt="Ghana Flag" class="w-16 h-12 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Ghana</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Visit the heart of Kente weaving, Adinkra symbols, and lively festivals celebrating Ghanaian heritage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NGO for Young Children: Art & Tech -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h3 class="text-2xl font-bold mb-4">Inspiring the Next Generation</h3>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto mb-6">We proudly support <span class="font-bold text-accent">ArtTech Kids Initiative</span>, an NGO dedicated to empowering young children across Africa who are passionate about art and computer technology. Through workshops, mentorship, and scholarships, we help nurture creativity and digital skills for a brighter future.</p>
+                <div class="flex flex-col md:flex-row justify-center gap-8 mt-8">
+                    <div class="flex-1 bg-[#E9D8C7] rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/icons/art-workshops.svg" alt="Art Workshops" class="w-16 h-16 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Art Workshops</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Hands-on art classes and exhibitions for children to express their creativity.</p>
+                    </div>
+                    <div class="flex-1 bg-[#E9D8C7] rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/icons/tech-mentorship.svg" alt="Tech Mentorship" class="w-16 h-16 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Tech Mentorship</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Coding, robotics, and digital art programs to prepare kids for the future.</p>
+                    </div>
+                    <div class="flex-1 bg-[#E9D8C7] rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/icons/get-involved.svg" alt="Get Involved" class="w-16 h-16 mx-auto mb-2 transition-transform duration-300 group-hover:scale-110">
+                        <h4 class="font-bold mb-2 group-hover:text-primary">Get Involved</h4>
+                        <p class="text-gray-600 group-hover:text-primary">Join us as a mentor, sponsor, or volunteer and help shape the next generation of African innovators.</p>
+                    </div>
+                </div>
+                <a href="#" id="support-arttech-btn" class="inline-block mt-8 bg-accent text-primary px-8 py-3 rounded-full font-bold hover:bg-primary hover:text-secondary transition-colors w-full md:w-auto text-center">Support ArtTech Kids</a>
+                <!-- Modal -->
+                <div id="arttech-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+                  <div class="bg-white rounded-lg shadow-lg p-8 max-w-sm w-full relative text-center">
+                    <button id="close-arttech-modal" class="absolute top-2 right-2 text-2xl text-gray-400 hover:text-primary">&times;</button>
+                    <h4 class="text-xl font-bold mb-6">Donate to ArtTech Kids enquiry</h4>
+                    <div class="flex flex-col gap-4">
+                      <a href="mailto:afiheritage@gmail.com" class="flex items-center justify-center bg-[#E9D8C7] text-primary px-4 py-3 rounded-full font-bold shadow hover:bg-accent hover:text-primary transition-colors">
+                        <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" stroke="none"/><path d="M22 6.5V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6.5l10 7 10-7z"/><path d="M2 6l10 7 10-7"/></svg>
+                        Email Us
+                      </a>
+                      <a href="https://wa.me/233500883341" target="_blank" class="flex items-center justify-center bg-[#E9D8C7] text-primary px-4 py-3 rounded-full font-bold shadow hover:bg-accent hover:text-primary transition-colors">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 32 32"><path d="M16.001 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.6 4.47 1.74 6.41L3.2 28.8l6.54-1.71a12.77 12.77 0 0 0 6.26 1.6h.01c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm0 23.36c-1.93 0-3.84-.5-5.5-1.44l-.39-.22-3.88 1.01 1.04-3.78-.25-.39A10.6 10.6 0 0 1 5.4 16c0-5.86 4.76-10.62 10.6-10.62 5.85 0 10.6 4.76 10.6 10.62 0 5.85-4.75 10.61-10.6 10.61zm5.8-7.98c-.32-.16-1.88-.93-2.17-1.04-.29-.11-.5-.16-.71.16-.21.32-.82 1.04-1.01 1.25-.18.21-.37.24-.69.08-.32-.16-1.36-.5-2.59-1.6-.96-.86-1.6-1.92-1.79-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.55.16-.18.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.71-1.71-.97-2.34-.26-.62-.53-.54-.71-.55-.18-.01-.39-.01-.6-.01-.21 0-.55.08-.84.4-.29.32-1.1 1.08-1.1 2.63 0 1.54 1.13 3.03 1.29 3.24.16.21 2.23 3.41 5.41 4.65.76.33 1.35.53 1.81.68.76.24 1.45.21 2 .13.61-.09 1.88-.77 2.15-1.52.27-.75.27-1.39.19-1.52-.08-.13-.29-.21-.61-.37z"/></svg>
+                        WhatsApp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var btn = document.getElementById('support-arttech-btn');
+                    var modal = document.getElementById('arttech-modal');
+                    var closeBtn = document.getElementById('close-arttech-modal');
+                    btn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        modal.classList.remove('hidden');
+                    });
+                    closeBtn.addEventListener('click', function() {
+                        modal.classList.add('hidden');
+                    });
+                    modal.addEventListener('click', function(e) {
+                        if (e.target === modal) {
+                            modal.classList.add('hidden');
+                        }
+                    });
+                });
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#4A403A] text-[#F3EADF] py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 AfriHeritage Creations. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html> 

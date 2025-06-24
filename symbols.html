@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbols - AfriHeritage Creations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#4A403A',
+                secondary: '#F3EADF',
+                accent: '#D4AF37',
+                'light-bg': '#E9D8C7',
+              },
+              fontFamily: {
+                serif: ['"Playfair Display"', 'serif'],
+                sans: ['"Roboto Serif"', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-[#F3EADF] text-[#4A403A]">
+
+    <header class="bg-white text-[#4A403A] sticky top-0 w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="AfriHeritage Creations Logo" class="h-20 w-auto shadow-lg mr-2 transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer">
+            </a>
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] text-accent font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="flex flex-col items-center space-y-6 py-4">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] text-accent font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Symbols Section -->
+        <section id="symbols" class="py-20 bg-[#E9D8C7]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Symbols We Live By</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <!-- Symbol 1 -->
+                    <div class="text-center bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/symbols/gye-nyame-medium.png" alt="Gye Nyame" class="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Gye Nyame</h3>
+                        <p class="text-gray-700 group-hover:text-primary">"Except for God" - A symbol of the supremacy of God.</p>
+                    </div>
+                    <!-- Symbol 2 -->
+                    <div class="text-center bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/symbols/sankofa-medium.png" alt="Sankofa" class="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Sankofa</h3>
+                        <p class="text-gray-700 group-hover:text-primary">"Go back and get it" - A symbol of the importance of learning from the past.</p>
+                    </div>
+                    <!-- Symbol 3 -->
+                    <div class="text-center bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/symbols/adinkrahene-medium.png" alt="Adinkrahene" class="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Adinkrahene</h3>
+                        <p class="text-gray-700 group-hover:text-primary">"Chief of the Adinkra symbols" - A symbol of greatness, charisma, and leadership.</p>
+                    </div>
+                    <!-- Symbol 4 -->
+                    <div class="text-center bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/symbols/dwennimmen-medium.png" alt="Dwennimmen" class="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Dwennimmen</h3>
+                        <p class="text-gray-700 group-hover:text-primary">"Ram's horns" - A symbol of strength yet humility, courage, and wisdom.</p>
+                    </div>
+                    <!-- Symbol 5 -->
+                    <div class="text-center bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/symbols/funtumfunefu-denkyemfunefu-medium.png" alt="Funtunfunefu Denkyemfunefu" class="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Funtunfunefu Denkyemfunefu</h3>
+                        <p class="text-gray-700 group-hover:text-primary">"Siamese crocodiles" - A symbol of democracy and unity in diversity.</p>
+                    </div>
+                    <!-- Symbol 6 -->
+                    <div class="text-center bg-white rounded-lg p-6 shadow-md transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:bg-accent hover:text-primary group">
+                        <img src="assets/symbols/nea-onnim-medium.png" alt="Nea Onnim" class="w-24 h-24 mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+                        <h3 class="text-xl font-bold mb-2 group-hover:text-primary">Nea Onnim</h3>
+                        <p class="text-gray-700 group-hover:text-primary">"He who does not know can know from learning" - A symbol of knowledge and life-long education.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#4A403A] text-[#F3EADF] py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 AfriHeritage Creations. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html> 
