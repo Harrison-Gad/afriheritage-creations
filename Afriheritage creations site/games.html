@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games - AfriHeritage Creations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#4A403A',
+                secondary: '#F3EADF',
+                accent: '#D4AF37',
+                'light-bg': '#E9D8C7',
+              },
+              fontFamily: {
+                serif: ['"Playfair Display"', 'serif'],
+                sans: ['"Roboto Serif"', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-[#F3EADF] text-[#4A403A]">
+
+    <header class="bg-white text-[#4A403A] sticky top-0 w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="AfriHeritage Creations Logo" class="h-20 w-auto shadow-lg mr-2 transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer">
+            </a>
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] text-accent font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="flex flex-col items-center space-y-6 py-4">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] text-accent font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Games Section -->
+        <section id="games" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Traditional Games</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Game 1: Oware -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="assets/games/Oware.jpg" alt="Oware Game Board" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Oware</h3>
+                        <p class="text-gray-700 mb-4">Oware is a strategy game of the Mancala family, played in West Africa and the Caribbean. It's a game of skill and calculation, where players aim to capture more seeds than their opponent.</p>
+                        <p class="text-gray-600 italic mb-4">Cultural Value: Oware teaches strategic thinking and is often used to encourage social interaction and sportsmanship among youth.</p>
+                        <button class="bg-primary text-secondary px-6 py-2 rounded-full hover:bg-accent hover:text-primary transition-colors how-to-play-btn" data-game="oware">Learn How to Play</button>
+                    </div>
+                    <!-- Game 2: Ampe -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="assets/games/Ampe.jpg" alt="Children playing Ampe" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Ampe</h3>
+                        <p class="text-gray-700 mb-4">Ampe is a lively game of jumping, clapping, and rhythm, popular among children in Ghana and neighboring countries. It's a game that requires energy, coordination, and a bit of luck.</p>
+                        <p class="text-gray-600 italic mb-4">Cultural Value: Ampe promotes physical activity, rhythm, and social bonding. It's often played during festivals and community gatherings.</p>
+                        <button class="bg-primary text-secondary px-6 py-2 rounded-full hover:bg-accent hover:text-primary transition-colors how-to-play-btn" data-game="ampe">Learn How to Play</button>
+                    </div>
+                    <!-- Game 3: Ludo -->
+                    <div class="bg-white rounded-lg shadow-lg p-6">
+                        <img src="assets/games/Ludo.jpg" alt="Ludo Game Board" class="w-full h-48 object-cover rounded-lg mb-4">
+                        <h3 class="text-2xl font-bold mb-2">Ludo</h3>
+                        <p class="text-gray-700 mb-4">While Ludo has origins in India, it has been widely adopted and Africanized across the continent. It's a simple race game based on sheer luck, making it fun for all ages.</p>
+                        <p class="text-gray-600 italic mb-4">Cultural Value: In many African homes, Ludo is a family-favorite, bringing together different generations for a time of laughter and friendly competition.</p>
+                        <button class="bg-primary text-secondary px-6 py-2 rounded-full hover:bg-accent hover:text-primary transition-colors how-to-play-btn" data-game="ludo">Learn How to Play</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#4A403A] text-[#F3EADF] py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 AfriHeritage Creations. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modal for How to Play -->
+    <div id="game-modal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-30 hidden">
+        <div class="bg-white rounded-lg shadow-lg max-w-lg w-full mx-4 p-6 relative">
+            <button id="close-game-modal" class="absolute top-2 right-2 text-2xl text-gray-500 hover:text-primary">&times;</button>
+            <h3 id="game-modal-title" class="text-2xl font-bold mb-4"></h3>
+            <div id="game-modal-content" class="text-gray-700"></div>
+        </div>
+    </div>
+
+    <script src="src/script.js"></script>
+</body>
+</html> 

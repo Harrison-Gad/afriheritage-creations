@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - AfriHeritage Creations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#4A403A',
+                secondary: '#F3EADF',
+                accent: '#D4AF37',
+                'light-bg': '#E9D8C7',
+              },
+              fontFamily: {
+                serif: ['"Playfair Display"', 'serif'],
+                sans: ['"Roboto Serif"', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-[#F3EADF] text-[#4A403A]">
+
+    <header class="bg-white text-[#4A403A] sticky top-0 w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="AfriHeritage Creations Logo" class="h-20 w-auto shadow-lg mr-2 transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer">
+            </a>
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="flex flex-col items-center space-y-6 py-4">
+                <li><a href="index.html" class="hover:text-[#D4AF37] font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section id="quiz" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <div id="quiz-container" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold mb-4">Which African Symbol Are You?</h2>
+                    <div id="question-container">
+                        <p id="question-text" class="text-lg text-gray-700 mb-8"></p>
+                        <div id="answers-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <!-- Answers will be dynamically inserted here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div id="result-container" class="max-w-2xl mx-auto bg-white p-8 rounded-lg shadow-lg hidden">
+                    <h2 class="text-3xl font-bold mb-4">You are...</h2>
+                    <img id="result-img" src="" alt="" class="w-32 h-32 mx-auto mb-4">
+                    <h3 id="result-title" class="text-2xl font-bold mb-2"></h3>
+                    <p id="result-description" class="text-gray-700"></p>
+                    <button id="restart-quiz" class="mt-8 bg-primary text-secondary px-8 py-3 rounded-full hover:bg-accent hover:text-primary transition-colors">Take Again</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#4A403A] text-[#F3EADF] py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 AfriHeritage Creations. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/quiz.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html> 

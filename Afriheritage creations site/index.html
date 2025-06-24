@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfriHeritage Creations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/png" href="assets/logo/logo.png">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                primary: '#4A403A',
+                secondary: '#F3EADF',
+                accent: '#D4AF37',
+                'light-bg': '#E9D8C7',
+              },
+              fontFamily: {
+                serif: ['"Playfair Display"', 'serif'],
+                sans: ['"Roboto Serif"', 'sans-serif'],
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="bg-[#F3EADF] text-[#4A403A]">
+
+    <header class="bg-white text-[#4A403A] fixed w-full z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/logo/logo.png" alt="AfriHeritage Creations Logo" class="h-20 w-auto shadow-lg mr-2 transition-transform duration-300 hover:scale-110 hover:shadow-2xl cursor-pointer">
+            </a>
+            <ul class="hidden md:flex space-x-10">
+                <li><a href="index.html" class="hover:text-[#D4AF37] text-accent font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+            <button class="md:hidden" id="mobile-menu-button">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="flex flex-col items-center space-y-6 py-4">
+                <li><a href="index.html" class="hover:text-[#D4AF37] text-accent font-bold">Home</a></li>
+                <li><a href="gallery.html" class="hover:text-[#D4AF37] font-bold">Gallery</a></li>
+                <li><a href="symbols.html" class="hover:text-[#D4AF37] font-bold">Symbols</a></li>
+                <li><a href="games.html" class="hover:text-[#D4AF37] font-bold">Games</a></li>
+                <li><a href="about.html" class="hover:text-[#D4AF37] font-bold">About</a></li>
+                <li><a href="contact.html" class="hover:text-[#D4AF37] font-bold">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="h-screen bg-cover bg-center flex items-center" style="background-image: url('assets/patterns/pattern 1.jpg');">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h1 class="text-5xl md:text-7xl font-bold font-serif mb-4">Where Heritage Breathes Through Art</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto">AfriHeritage Creations is a celebration of African art, culture, and heritage. We are dedicated to preserving and promoting the rich artistic traditions of the continent, connecting talented artisans with a global audience. Our mission is to share the stories, symbols, and craftsmanship that have been passed down through generations, ensuring they continue to inspire and enrich lives.</p>
+            </div>
+        </section>
+
+        <!-- Bonus Section -->
+        <section class="py-20 text-center">
+            <div class="container mx-auto px-6">
+                <div class="bg-light-bg p-12 rounded-lg shadow-lg">
+                    <h3 class="text-3xl font-bold mb-4">Which African Symbol Are You?</h3>
+                    <p class="text-gray-700 mb-8">Take our fun quiz to discover the symbol that resonates with your spirit.</p>
+                    <a href="quiz.html" class="bg-accent text-primary px-8 py-3 rounded-full hover:bg-primary hover:text-secondary transition-colors">Start Quiz</a>
+                </div>
+
+                <div class="mt-20">
+                    <h3 class="text-2xl font-bold">Our E-commerce Store is Coming Soon!</h3>
+                    <p class="text-gray-600">Get ready to own a piece of African heritage. Sign up for our newsletter to be notified of our launch.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-[#4A403A] text-[#F3EADF] py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 AfriHeritage Creations. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="src/script.js"></script>
+</body>
+</html> 

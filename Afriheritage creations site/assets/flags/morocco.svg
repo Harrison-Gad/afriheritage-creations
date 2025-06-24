@@ -1,0 +1,8 @@
+<svg width="120" height="80" viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Red background -->
+  <rect x="0" y="0" width="120" height="80" fill="#C1272D"/>
+  <!-- Green star -->
+  <g transform="translate(60, 40)">
+    <polygon points="0,-15 4,-4 15,-4 7,3 12,15 0,8 -12,15 -7,3 -15,-4 -4,-4" fill="#006233"/>
+  </g>
+</svg> 
